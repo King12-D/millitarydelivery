@@ -1,1 +1,1 @@
-web: gunicorn courier.wsgi
+web: gunicorn courier.wsgi:application
