@@ -12,9 +12,11 @@ class Package(models.Model):
     ]
     sender_name = models.CharField(max_length=100)
     receiver_name = models.CharField(max_length=100)
+    address = models.CharField(max_length=100, default="Unknown Address")
     receiver_email = models.EmailField()
     tracking_id = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='processing')
+    location = models.CharField(max_length=100, default="Warehouse")  # New field for tracking location
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
