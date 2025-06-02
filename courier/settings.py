@@ -28,7 +28,7 @@ DEBUG = False
 
 
 
-ALLOWED_HOSTS = ['mdeliveryservice.org', 'mds-inlg.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['mdeliveryservice.org', 'localhost', '127.0.0.1']
 CSRF_TRUSTED_ORIGINS = ['https://mdeliveryservice.org']
 
 
